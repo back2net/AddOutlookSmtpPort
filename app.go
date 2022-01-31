@@ -64,7 +64,7 @@ func setSmtpAddress(ps registry.Key, pn string) {
 		smtpKey := strings.Replace(string(smtpTemp), "\x00", "", -1)
 
 		if smtpKey == "exchange.svetlana-k.ru" {
-			err = settings.SetDWordValue("SMTP Port", 465)
+			err = settings.SetDWordValue("SMTP Port", 587)
 			if err != nil {
 				log.Fatal(err)
 			}
